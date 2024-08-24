@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'aku': 'ambo',
             'dia': 'inyo',
             'kau': 'ang',
+            'kamu': 'waang',
             'kenapa': 'mangapo',
             'mengapa': 'mangapo',
             'bagaimana': 'baapo',
@@ -30,6 +31,32 @@ document.addEventListener('DOMContentLoaded', function() {
             'sama': 'samo',
             'tinggal': 'tingga',
             'orang': 'urang',
+            'sekolah': 'sikola',
+            'kesini': 'kasikko',
+            'berita': 'barito',
+            'cerita': 'carito',
+            'saja': 'sajo',
+            'juga': 'juo',
+            'ayahmu': 'ayahang',
+            'pecah': 'pacah',
+            'pecahkan': 'pacahkan',
+            'kepala': 'kapalo',
+            'ku': 'ambo',
+            'mu': 'ang',
+            'nanti': 'beko',
+            'kupecahkan': 'ambo pacakan',
+            'berani': 'bagak',
+            'kali': 'bana',
+            'enak': 'lamak',
+            'tidak': 'indak',
+            'mana': 'mano',
+            'sampai': 'sampe',
+            'ya': 'yo',
+            'iya': 'iyo',
+            'bandal': 'mada',
+            'nakal': 'tangka',
+            'ke': 'kadi',
+            'lama': 'lamban',
         };
 
         // Pisahkan input menjadi kata-kata
@@ -49,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const pesisirIndicator = document.getElementById('pesisirIndicator');
         const indoIndicator = document.getElementById('indoIndicator');
 
+        // Toggle classes to switch position
         pesisirIndicator.classList.toggle('active');
         indoIndicator.classList.toggle('active');
 
