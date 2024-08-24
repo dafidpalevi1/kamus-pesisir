@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamus Bahasa Pesisir Sibolga Tapanuli Tengah</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Logo" class="logo"> <!-- Ganti 'logo.png' dengan path logo Anda -->
+        <div class="menu-toggle" id="menuToggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
+                <path d="M4 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zM4 12h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zM4 18h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+            </svg>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Kamus Bahasa Pesisir Sibolga - Tapanuli Tengah</h1>
+        
+        <!-- Panel Indikator -->
+        <div class="language-indicator">
+            <div id="pesisirIndicator" class="indicator active">Bahasa Indonesia</div>
+            <button id="switchButton" class="switch-button" aria-label="Beralih arah">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor">
+                    <path fill-rule="evenodd" d="M11.8.603a.5.5 0 0 0-.8.4v2H1a1 1 0 1 0 0 2h10v2a.5.5 0 0 0 .8.4l3.997-3a.5.5 0 0 0 0-.8l-3.997-3ZM5 13.003v2a.5.5 0 0 1-.8.4l-3.997-3a.5.5 0 0 1 0-.8l3.997-3a.5.5 0 0 1 .8.4v2h10a1 1 0 0 1 0 2H5Z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div id="indoIndicator" class="indicator">Bahasa Pesisir</div>
+        </div>
+
+        <div class="content">
+            <div class="column">
+                <textarea id="inputText" placeholder="Masukkan teks..."></textarea>
+            </div>
+            <div class="column">
+                <textarea id="outputText" placeholder="Hasil terjemahan..." readonly></textarea>
+            </div>
+        </div>
+        
+        <button id="translateButton">Terjemahkan</button>
+    </div>
+
+    <footer class="footer">
+        Design by: Dafid SEO
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
