@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'sedang': 'sadang',
             'kesana': 'kasinun',
             'sama': 'samo',
+            'tinggal': 'tingga',
+            'orang': 'urang',
         };
 
         // Pisahkan input menjadi kata-kata
