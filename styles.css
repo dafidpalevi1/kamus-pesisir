@@ -21,20 +21,32 @@ body {
 }
 
 .logo {
-    height: 40px; /* Adjust the size of the logo */
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: auto; /* Push menu to the right on desktop */
 }
 
 .menu-toggle {
     display: none;
     cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px; /* Add padding around the menu button */
+    z-index: 1001; /* Ensure it's above other elements */
 }
 
 .menu-toggle svg {
     fill: #fff;
+    width: 24px; /* Adjust the size of the icon */
+    height: 24px;
 }
 
+/* Navigation Styles */
 .nav {
     display: flex;
+    align-items: center;
 }
 
 .nav ul {
@@ -115,6 +127,7 @@ body {
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 0 10px; /* Add margin for spacing */
 }
 
 .switch-button svg {
@@ -189,12 +202,27 @@ button:hover {
 
 /* Responsive Design for Mobile View */
 @media (max-width: 768px) {
-    .content {
+    .header {
         flex-direction: column;
+        align-items: center;
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 
-    textarea {
-        height: 150px;
+    .logo {
+        margin: 0;
+        font-size: 20px;
+        text-align: center; /* Center logo on mobile */
+        width: auto; /* Allow logo width to adjust automatically */
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 15px; /* Increase padding around the button */
+        background-color: #007bff;
+        border-radius: 50%;
     }
 
     .nav {
@@ -206,6 +234,7 @@ button:hover {
         top: 60px; /* Adjust based on header height */
         left: 0;
         z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for dropdown effect */
     }
 
     .nav.active {
@@ -213,22 +242,35 @@ button:hover {
     }
 
     .nav ul {
-        width: 100%;
         display: flex;
         flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 
     .nav li {
-        border-bottom: 1px solid #0056b3;
+        margin: 0;
+        border-bottom: 1px solid #0056b3; /* Add a border between menu items */
     }
 
     .nav a {
         padding: 15px;
         text-align: center;
         font-size: 16px;
+        color: #fff;
+        display: block; /* Make links block elements to cover the full width */
     }
 
-    .menu-toggle {
-        display: block;
+    .nav a:hover {
+        background-color: #0056b3;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    textarea {
+        height: 150px;
     }
 }
