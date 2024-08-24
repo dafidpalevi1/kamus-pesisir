@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'nakal': 'tangka',
             'ke': 'kadi',
             'lama': 'lamban',
+            'pakai': 'pake',
         };
 
         // Pisahkan input menjadi kata-kata
