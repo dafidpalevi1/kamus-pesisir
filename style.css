@@ -7,31 +7,46 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    color: #333;
+}
+/* Styling untuk logo sebagai teks */
+.logo {
+    font-size: 28px; /* Ukuran font */
+    font-weight: bold; /* Membuat teks tebal */
+    text-transform: uppercase; /* Mengubah teks menjadi huruf besar */
 }
 
-h1 {
-    text-align: center;
+.logo-link {
+    color: #fff; /* Warna teks */
+    text-decoration: none; /* Menghapus garis bawah pada link */
 }
+
+/* Menghapus perubahan warna saat link di-hover atau diklik */
+.logo-link:visited,
+.logo-link:focus,
+.logo-link:hover,
+.logo-link:active {
+    color: #fff; /* Warna tetap sama seperti elemen induk */
+    text-decoration: none; /* Tetap tanpa garis bawah */
+}
+
 
 /* Header Styling */
 .header {
     background-color: #007bff;
-    padding: 15px 20px;
+    padding: 10px 20px;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
-    margin-right: auto;
+    margin-right: auto; /* Push menu to the right on desktop */
 }
 
 .menu-toggle {
@@ -39,13 +54,13 @@ h1 {
     cursor: pointer;
     background: none;
     border: none;
-    padding: 10px;
-    z-index: 1001;
+    padding: 10px; /* Add padding around the menu button */
+    z-index: 1001; /* Ensure it's above other elements */
 }
 
 .menu-toggle svg {
     fill: #fff;
-    width: 24px;
+    width: 24px; /* Adjust the size of the icon */
     height: 24px;
 }
 
@@ -87,6 +102,7 @@ h1 {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     flex: 1;
+    text-align: center;
 }
 
 /* Language Indicator Panel */
@@ -200,24 +216,42 @@ button:hover {
     margin-top: auto;
 }
 
+/* Profile Photo Styling */
+.profile-photo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
 /* Responsive Design for Mobile View */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
     .logo {
-        margin: 0;
         font-size: 20px;
         text-align: center;
+        margin: 0;
     }
 
     .menu-toggle {
         display: block;
         position: absolute;
-        top: 15px;
-        right: 20px;
+        top: 10px;
+        right: 10px;
+        padding: 15px;
+        background-color: #007bff;
+        border-radius: 50%;
     }
 
     .nav {
@@ -264,18 +298,8 @@ button:hover {
     .content {
         flex-direction: column;
     }
-}
-/* Profile Photo Styling */
-.profile-photo {
-    text-align: center;
-    margin: 20px 0;
-}
 
-.profile-photo img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid #007bff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    textarea {
+        height: 150px;
+    }
 }
-

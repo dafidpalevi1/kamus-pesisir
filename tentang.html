@@ -11,21 +11,22 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="logo">Kamus Pesisir</div>
-        <button class="menu-toggle" aria-label="Toggle navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M4 6h16M4 12h16m-7 6h7" />
+        <div class="logo"><a href="index.html" class="logo-link">Kamus Pesisir</a></div>
+
+
+        <div class="menu-toggle" id="menuToggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor">
+                <path d="M4 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zM4 12h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zM4 18h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
             </svg>
-        </button>
+        </div>
         <nav class="nav">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="tentang.html">Tentang Saya</a></li>
+                <li><a href="#">Services</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <!-- Main Container -->
     <div class="container">
 
@@ -39,7 +40,7 @@
         <!-- About Section -->
         <section id="about">
             <h2>Tentang Saya</h2>
-            <p>Hello! I am [Dafid SEO], a passionate web developer with experience in creating dynamic and responsive websites. I enjoy coding and am always eager to learn new technologies.</p>
+            <p>Hello! I am Dafid SEO, a passionate web developer with experience in creating dynamic and responsive websites. I enjoy coding and am always eager to learn new technologies.</p>
         </section>
 
         <!-- Skills Section -->
@@ -72,10 +73,11 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+        <p>&copy; 2024 <a href="https://www.tiktok.com/@dafidseo">Dafid SEO</a>. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
 
+    <!-- Add the script before the closing body tag -->
+    <script src="script.js"></script>
 </body>
 
 </html>
