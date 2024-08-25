@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 /* Styling untuk logo sebagai teks */
 .logo {
     font-size: 28px; /* Ukuran font */
@@ -28,7 +29,6 @@ body {
     color: #fff; /* Warna tetap sama seperti elemen induk */
     text-decoration: none; /* Tetap tanpa garis bawah */
 }
-
 
 /* Header Styling */
 .header {
@@ -105,38 +105,6 @@ body {
     text-align: center;
 }
 
-/* Language Indicator Panel */
-.language-indicator {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    padding: 10px;
-}
-
-.indicator {
-    flex: 1;
-    padding: 10px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.indicator.active {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.indicator:hover {
-    background-color: #0056b3;
-    color: #fff;
-}
-
 /* Content Section Styling */
 .content {
     display: flex;
@@ -152,7 +120,6 @@ body {
 .column h2 {
     font-size: 20px;
     color: #007bff;
-    margin-bottom: 15px;
 }
 
 .column ul {
@@ -302,4 +269,81 @@ button:hover {
     textarea {
         height: 150px;
     }
+}
+
+/* Main Section Styling */
+#about {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Styling untuk teks slider */
+.text-slider {
+    position: relative;
+    height: 80px; /* Atur tinggi sesuai kebutuhan */
+    margin-top: 20px;
+    overflow: hidden;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Styling untuk setiap slide */
+.text-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%; /* Mulai dari luar layar */
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    animation: typing 10s steps(30, end) infinite, fade 10s infinite;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+    0% {
+        left: 100%;
+        opacity: 1;
+    }
+    10% {
+        left: 0;
+        opacity: 1;
+    }
+    90% {
+        left: 0;
+        opacity: 1;
+    }
+    100% {
+        left: -100%;
+        opacity: 0;
+    }
+}
+
+/* Keyframes for fading effect */
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+#about h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: center;
 }
