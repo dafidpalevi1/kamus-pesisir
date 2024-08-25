@@ -7,46 +7,31 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-/* Styling untuk logo sebagai teks */
-.logo {
-    font-size: 28px; /* Ukuran font */
-    font-weight: bold; /* Membuat teks tebal */
-    text-transform: uppercase; /* Mengubah teks menjadi huruf besar */
+    color: #333;
 }
 
-.logo-link {
-    color: #fff; /* Warna teks */
-    text-decoration: none; /* Menghapus garis bawah pada link */
+h1 {
+    text-align: center;
 }
-
-/* Menghapus perubahan warna saat link di-hover atau diklik */
-.logo-link:visited,
-.logo-link:focus,
-.logo-link:hover,
-.logo-link:active {
-    color: #fff; /* Warna tetap sama seperti elemen induk */
-    text-decoration: none; /* Tetap tanpa garis bawah */
-}
-
 
 /* Header Styling */
 .header {
     background-color: #007bff;
-    padding: 10px 20px;
+    padding: 15px 20px;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
-    margin-right: auto; /* Push menu to the right on desktop */
+    margin-right: auto;
 }
 
 .menu-toggle {
@@ -54,13 +39,13 @@ body {
     cursor: pointer;
     background: none;
     border: none;
-    padding: 10px; /* Add padding around the menu button */
-    z-index: 1001; /* Ensure it's above other elements */
+    padding: 10px;
+    z-index: 1001;
 }
 
 .menu-toggle svg {
     fill: #fff;
-    width: 24px; /* Adjust the size of the icon */
+    width: 24px;
     height: 24px;
 }
 
@@ -92,16 +77,16 @@ body {
     color: #e0e0e0;
 }
 
-/* Container Styling */
+/* Main Container Styling */
 .container {
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin: 20px auto 60px;
-    text-align: center;
+    margin: 20px auto;
+    flex: 1;
 }
 
 /* Language Indicator Panel */
@@ -136,44 +121,41 @@ body {
     color: #fff;
 }
 
-/* Switch Button Styling */
-.switch-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: #007bff;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 0 10px; /* Add margin for spacing */
-}
-
-.switch-button svg {
-    fill: #fff;
-}
-
-.switch-button:hover {
-    background-color: #0056b3;
-}
-
-/* Flexbox Layout for Content */
+/* Content Section Styling */
 .content {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
-    margin-bottom: 20px;
 }
 
 .column {
     flex: 1;
+    min-width: 200px;
 }
 
+.column h2 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column ul li {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
 textarea {
     width: 100%;
-    height: 200px;
+    height: 150px;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -189,7 +171,6 @@ textarea:focus {
     outline: none;
 }
 
-/* Button Styling */
 button {
     display: block;
     width: 100%;
@@ -201,7 +182,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 20px; /* Space between button and textarea */
+    margin-top: 10px;
 }
 
 button:hover {
@@ -213,12 +194,10 @@ button:hover {
     text-align: center;
     font-size: 14px;
     color: #777;
-    padding: 10px;
-    background-color: #fff;
+    padding: 15px;
+    background-color: #f8f9fa;
     border-top: 1px solid #ddd;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto;
 }
 
 /* Responsive Design for Mobile View */
@@ -226,24 +205,19 @@ button:hover {
     .header {
         flex-direction: column;
         align-items: center;
-        padding: 10px; /* Adjust padding for smaller screens */
     }
 
     .logo {
         margin: 0;
         font-size: 20px;
-        text-align: center; /* Center logo on mobile */
-        width: auto; /* Allow logo width to adjust automatically */
+        text-align: center;
     }
 
     .menu-toggle {
         display: block;
         position: absolute;
-        top: 10px;
-        right: 10px;
-        padding: 15px; /* Increase padding around the button */
-        background-color: #007bff;
-        border-radius: 50%;
+        top: 15px;
+        right: 20px;
     }
 
     .nav {
@@ -252,10 +226,10 @@ button:hover {
         width: 100%;
         background-color: #007bff;
         position: absolute;
-        top: 60px; /* Adjust based on header height */
+        top: 60px;
         left: 0;
         z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for dropdown effect */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .nav.active {
@@ -272,7 +246,7 @@ button:hover {
 
     .nav li {
         margin: 0;
-        border-bottom: 1px solid #0056b3; /* Add a border between menu items */
+        border-bottom: 1px solid #0056b3;
     }
 
     .nav a {
@@ -280,7 +254,7 @@ button:hover {
         text-align: center;
         font-size: 16px;
         color: #fff;
-        display: block; /* Make links block elements to cover the full width */
+        display: block;
     }
 
     .nav a:hover {
@@ -290,8 +264,18 @@ button:hover {
     .content {
         flex-direction: column;
     }
-
-    textarea {
-        height: 150px;
-    }
 }
+/* Profile Photo Styling */
+.profile-photo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
