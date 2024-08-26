@@ -29,6 +29,11 @@ body {
     text-decoration: none; /* Tetap tanpa garis bawah */
 }
 
+h6 {
+    font-size: medium;
+    font-weight: normal;
+}
+
 
 /* Header Styling */
 .header {
@@ -294,4 +299,12 @@ button:hover {
     textarea {
         height: 150px;
     }
+   
+    h6 {
+        text-align: left;
+        font-size: medium;
+        font-weight: normal;
+    }
+    
+    
 }

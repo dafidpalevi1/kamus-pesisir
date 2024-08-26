@@ -92,6 +92,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'ke': 'kadi',
             'lama': 'lamban',
             'pakai': 'pake',
+            'warung': 'lapo',
+            'bercanda': 'bagaluk',
+            'senyum': 'galak',
+            'bibir': 'bibi',
             // (tambahkan kata-kata lain sesuai kamus Anda)
         };
 
