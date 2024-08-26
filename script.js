@@ -1,19 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Pastikan elemen-elemen yang dibutuhkan ada di halaman
     const translateButton = document.getElementById('translateButton');
     const switchButton = document.getElementById('switchButton');
     const menuToggle = document.getElementById('menuToggle');
     const moreInfoButton = document.getElementById('more-info-btn');
 
-    // Periksa apakah elemen ada sebelum menambahkan event listener
     if (translateButton) {
         translateButton.addEventListener('click', translate);
     }
-    
+
     if (switchButton) {
         switchButton.addEventListener('click', switchLanguage);
     }
-    
+
     if (menuToggle) {
         menuToggle.addEventListener('click', toggleMenu);
     }
@@ -36,12 +34,13 @@ document.addEventListener('DOMContentLoaded', function() {
     function translate() {
         const inputText = document.getElementById('inputText');
         const outputText = document.getElementById('outputText');
-        
-        if (!inputText || !outputText) return;
+        const pesisirIndicator = document.getElementById('pesisirIndicator');
+        const indoIndicator = document.getElementById('indoIndicator');
+
+        if (!inputText || !outputText || !pesisirIndicator || !indoIndicator) return;
 
         const inputValue = inputText.value.toLowerCase().trim();
 
-        // Kamus terjemahan bahasa daerah
         const dictionary = {
             'apa': 'apo',
             'siapa': 'siapo',
@@ -75,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function() {
             'pecah': 'pacah',
             'pecahkan': 'pacahkan',
             'kepala': 'kapalo',
-            'ku': 'ambo',
             'mu': 'ang',
             'nanti': 'beko',
             'kupecahkan': 'ambo pacakan',
@@ -96,20 +94,42 @@ document.addEventListener('DOMContentLoaded', function() {
             'bercanda': 'bagaluk',
             'senyum': 'galak',
             'bibir': 'bibi',
-            // (tambahkan kata-kata lain sesuai kamus Anda)
         };
+        
 
-        // Pisahkan input menjadi kata-kata
+        // Balikkan kamus untuk terjemahan dari Bahasa Pesisir ke Indonesia
+        const reverseDictionary = {};
+        for (let key in dictionary) {
+            reverseDictionary[dictionary[key]] = key;
+        }
+
         const words = inputValue.split(/\s+/);
+        let detectedLanguage = 'indonesia';
 
-        // Terjemahkan setiap kata
-        const translatedWords = words.map(word => dictionary[word] || word);
+        for (const word of words) {
+            if (reverseDictionary[word]) {
+                detectedLanguage = 'pesisir';
+                break;
+            }
+        }
 
-        // Gabungkan hasil terjemahan
-        const translatedText = translatedWords.join(' ');
+        if (detectedLanguage === 'pesisir') {
+            pesisirIndicator.classList.add('active');
+            indoIndicator.classList.remove('active');
 
-        // Tampilkan hasil terjemahan
-        outputText.value = translatedText;
+            const translatedWords = words.map(word => reverseDictionary[word] || word);
+            const translatedText = translatedWords.join(' ');
+
+            outputText.value = translatedText;
+        } else {
+            pesisirIndicator.classList.remove('active');
+            indoIndicator.classList.add('active');
+
+            const translatedWords = words.map(word => dictionary[word] || word);
+            const translatedText = translatedWords.join(' ');
+
+            outputText.value = translatedText;
+        }
     }
 
     function switchLanguage() {
@@ -117,14 +137,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const indoIndicator = document.getElementById('indoIndicator');
 
         if (pesisirIndicator && indoIndicator) {
-            // Toggle classes to switch position
             pesisirIndicator.classList.toggle('active');
             indoIndicator.classList.toggle('active');
 
-            // Switch the content direction
             const inputText = document.getElementById('inputText');
             const outputText = document.getElementById('outputText');
-            
+
             if (inputText && outputText) {
                 const tempText = inputText.value;
                 inputText.value = outputText.value;
