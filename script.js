@@ -95,9 +95,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'senyum': 'galak',
             'bibir': 'bibi',
         };
-        
 
-        // Balikkan kamus untuk terjemahan dari Bahasa Pesisir ke Indonesia
+        // Reverse dictionary for translation from Bahasa Pesisir to Indonesian
         const reverseDictionary = {};
         for (let key in dictionary) {
             reverseDictionary[dictionary[key]] = key;
@@ -135,14 +134,23 @@ document.addEventListener('DOMContentLoaded', function() {
     function switchLanguage() {
         const pesisirIndicator = document.getElementById('pesisirIndicator');
         const indoIndicator = document.getElementById('indoIndicator');
+        const container = document.querySelector('.language-indicator');
 
-        if (pesisirIndicator && indoIndicator) {
+        if (pesisirIndicator && indoIndicator && container) {
+            // Swap the positions of the indicators
+            if (container.children[0] === pesisirIndicator) {
+                container.insertBefore(indoIndicator, pesisirIndicator);
+            } else {
+                container.insertBefore(pesisirIndicator, indoIndicator);
+            }
+
+            // Optionally toggle active classes
             pesisirIndicator.classList.toggle('active');
             indoIndicator.classList.toggle('active');
 
+            // Swap input and output text if needed
             const inputText = document.getElementById('inputText');
             const outputText = document.getElementById('outputText');
-
             if (inputText && outputText) {
                 const tempText = inputText.value;
                 inputText.value = outputText.value;
