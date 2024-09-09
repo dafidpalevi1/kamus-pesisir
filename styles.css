@@ -112,16 +112,14 @@ h6 {
 /* Language Indicator Panel */
 .language-indicator {
     display: flex;
-    justify-content: center; /* Center children horizontally */
-    align-items: center;     /* Center children vertically */
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
     background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     padding: 10px;
-    position: relative; /* Ensure relative positioning for absolute children */
 }
-
 
 .indicator {
     flex: 1;
@@ -131,10 +129,6 @@ h6 {
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border: 1px solid #ddd; /* Thin gray border */
-    margin: 0 10px; /* Margin between indicators and switch button */
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
 .indicator.active {
@@ -159,10 +153,7 @@ h6 {
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin: 0 10px; /* Margin for spacing */
-    position: absolute; /* Use absolute positioning */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Center vertically */
+    margin: 0 10px; /* Add margin for spacing */
 }
 
 .switch-button svg {
@@ -172,7 +163,6 @@ h6 {
 .switch-button:hover {
     background-color: #0056b3;
 }
-
 
 /* Flexbox Layout for Content */
 .content {
