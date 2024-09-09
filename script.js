@@ -98,157 +98,156 @@ document.addEventListener('DOMContentLoaded', function() {
             'perempuan': 'padusi',
             'besar': 'gadang',
             'orang': 'urang',
-            'kuda' :  'kudo'
-            'buaya' :  'buayo'
-            'delapan' : 'lapan'
-            'perut' : 'paruk'
-            'kerbau' : 'kabo'
-            'semua' : 'sadonyo'
-            'siput' : 'cipui'
-            'takut' : 'takku'
-            'kecil' : 'ketek'
-            'singkat' : 'singkek'
-            'bangkrut' : 'handam'
-            'deman' : 'damam'
-            'mertua' : 'mintuo'
-            'sepotong' : 'sakudung'
-            'sebelas' :'sabale'
-            'bulat' :'bulek'
-            'merajuk' : 'sundek'
-            'kemarin' : 'kapatang'
-            'besok' : 'barisuk'
-            'periuk' : 'pariuk'
-            'hitung' : 'kiro'
-            'kera' : 'kara'
-            'pekat' : 'pakke'
-            'pikat' : 'pikkek'
-            'satu gelas' : 'sagale'
-            'satugelas' : 'sagele'
-            'segala' : 'sagalo'
-            'sampah' : 'sarok'
-            'penuh' : 'panuh'
-            'talas' : 'tale'
-            'telur' : 'talu'
-            'rubah' : 'ruba'
-            'baik' : 'elok'
-            'tampar' : 'tampa'
-            'dorong' : 'tulak'
-            'dapur' : 'dapu'
-            'sangat' : 'bana'
-            'udara' : 'udaro'
-            'utara' : 'utaro'
-            'dendam' : 'dandam'
-            'hias' : 'dandan'
-            'kawan' : 'sanak'
-            'tanya' : 'tanyo'
-            'enam' : 'anam'
-            'tangkap' : 'tangkok'
-            'pesan' : 'pasan'
-            'hujan' : 'ujan'
-            'berat' : 'barek'
-            'robek' : 'cabik'
-            'merobek' : 'mancabik'
-            'jepit' : 'japik'
-            'menjepit' : 'manjapik'
-            'cara' : 'caro'
-            'jala' : 'jalo'
-            'kakak ibu' : 'uak'
-            'kail' : 'kai'
-            'pisau' : 'piso'
-            'besok' : 'barisuk'
-            'itu' : 'inun'
-            'cerita' : 'curito'
-            'gadis' : 'gadi'
-            'beri' : 'agi'
-            'adik perempuan ibu' : 'etek'
-            'dapat' : 'dapek'
-            'panas' : 'hangek'
-            'perkakas' : 'pakakke'
-            'pasar' : 'onan'
-            'abang' : 'ogek'
-            'cabai' : 'lado'
-            'atas' : 'ate'
-            'kakak perempuan' : 'accik'
-            'beras' : 'bare'
-            'ipar perempuan' : 'eda'
-            'gigit' : 'gigik'
-            'gelas' : 'gale'
-            'pelaut' : 'palawik'
-            'pukul' : 'hampok'
-            'buah pikiran' : 'upayo'
-            'terkenang' : 'takana'
-            'kertas' : 'karate'
-            'denda' : 'dando'
-            'mampus' : 'mampui'
-            'menghadap' : 'manghadok'
-            'kasur' : 'kasu'
-            'kerupuk' : 'karipik'
-            'bacok' : 'pakkuk'
-            'cangkir' : 'mangkuk'
-            'telan' : 'raguk'
-            'halus' : 'halui'
-            'hancur' : 'hancu'
-            'jahat' : 'jahek'
-            'sebut' : 'sabuk'
-            'ejek' : 'risak'
-            'mengejek' : 'marisak'
-            'cepat' : 'lakke'
-            'bersatu' : 'malakkek'
-            'dempet' : 'malakkek'
-            'cari' : 'resek'
-            'mencari' : 'maresek'
-            'darah' : 'dara'
-            'kalian' : 'munak'
-            'ikan bakar' : 'sambam'
-            'ikan' : 'lauk'
-            'berhembus' : 'barambui'
-            'genit' : 'rogon'
-            'nyamuk': 'rangik'
-            'ayah' : 'aya'
-            'jilat' : 'jilek'
-            'penjilat' : 'panjilek'
-            'jual' : 'jua'
-            'satu ikat' 'sajarek'
-            'cermin' : 'camin'
-            'nangka' : 'cubadak'
-            'terima' : 'jawek'
-            'panggil' : 'imbow'
-            'tua' : 'gaek'
-            'juga' : 'juo'
-            'haluan' : 'aluan'
-            'melihat' : 'maliek'
-            'lihat' : 'liek'
-            'hias' : 'kie'
-            'setiap' : 'satiok'
-            'terus' : 'tarus'
-            'putus' : 'putui'
-            'tambah' : 'tambu'
-            'angkat' : 'angkek'
-            'senja' : 'sanjo'
+            'kuda' :  'kudo',
+            'buaya' :  'buayo',
+            'delapan' : 'lapan',
+            'perut' : 'paruk',
+            'kerbau' : 'kabo',
+            'semua' : 'sadonyo',
+            'siput' : 'cipui',
+            'takut' : 'takku',
+            'kecil' : 'ketek',
+            'singkat' : 'singkek',
+            'bangkrut' : 'handam',
+            'deman' : 'damam',
+            'mertua' : 'mintuo',
+            'sepotong' : 'sakudung',
+            'sebelas' :'sabale',
+            'bulat' :'bulek',
+            'merajuk' : 'sundek',
+            'kemarin' : 'kapatang',
+            'besok' : 'barisuk',
+            'periuk' : 'pariuk',
+            'hitung' : 'kiro',
+            'kera' : 'kara',
+            'pekat' : 'pakke',
+            'pikat' : 'pikkek',
+            'satu gelas' : 'sagale',
+            'satugelas' : 'sagalas',
+            'segala' : 'sagalo',
+            'sampah' : 'sarok',
+            'penuh' : 'panuh',
+            'talas' : 'tale',
+            'telur' : 'talu',
+            'rubah' : 'ruba',
+            'baik' : 'elok',
+            'tampar' : 'tampa',
+            'dorong' : 'tulak',
+            'dapur' : 'dapu',
+            'sangat' : 'bana',
+            'udara' : 'udaro',
+            'utara' : 'utaro',
+            'dendam' : 'dandam',
+            'hias' : 'dandan',
+            'kawan' : 'sanak',
+            'tanya' : 'tanyo',
+            'enam' : 'anam',
+            'tangkap' : 'tangkok',
+            'pesan' : 'pasan',
+            'hujan' : 'ujan',
+            'berat' : 'barek',
+            'robek' : 'cabik',
+            'merobek' : 'mancabik',
+            'jepit' : 'japik',
+            'menjepit' : 'manjapik',
+            'cara' : 'caro',
+            'jala' : 'jalo',
+            'kakak ibu' : 'uak',
+            'kail' : 'kai',
+            'pisau' : 'piso',
+            'besok' : 'barisuk',
+            'itu' : 'inun',
+            'cerita' : 'curito',
+            'gadis' : 'gadi',
+            'beri' : 'agi',
+            'adik perempuan ibu' : 'etek',
+            'dapat' : 'dapek',
+            'panas' : 'hangek',
+            'perkakas' : 'pakakke',
+            'pasar' : 'onan',
+            'abang' : 'ogek',
+            'cabai' : 'lado',
+            'atas' : 'ate',
+            'kakak perempuan' : 'accik',
+            'beras' : 'bare',
+            'ipar perempuan' : 'eda',
+            'gigit' : 'gigik',
+            'gelas' : 'gale',
+            'pelaut' : 'palawik',
+            'pukul' : 'hampok',
+            'buah pikiran' : 'upayo',
+            'terkenang' : 'takana',
+            'kertas' : 'karate',
+            'denda' : 'dando',
+            'mampus' : 'mampui',
+            'menghadap' : 'manghadok',
+            'kasur' : 'kasu',
+            'kerupuk' : 'karipik',
+            'bacok' : 'pakkuk',
+            'cangkir' : 'mangkuk',
+            'telan' : 'raguk',
+            'halus' : 'halui',
+            'hancur' : 'hancu',
+            'jahat' : 'jahek',
+            'sebut' : 'sabuk',
+            'ejek' : 'risak',
+            'mengejek' : 'marisak',
+            'cepat' : 'lakke',
+            'bersatu' : 'malakkek',
+            'dempet' : 'malakkek',
+            'cari' : 'resek',
+            'mencari' : 'maresek',
+            'darah' : 'dara',
+            'kalian' : 'munak',
+            'ikan bakar' : 'sambam',
+            'ikan' : 'lauk',
+            'berhembus' : 'barambui',
+            'genit' : 'rogon',
+            'nyamuk': 'rangik',
+            'ayah' : 'aya',
+            'jilat' : 'jilek',
+            'penjilat' : 'panjilek',
+            'jual' : 'jua',
+            'satu ikat' 'sajarek',
+            'cermin' : 'camin',
+            'nangka' : 'cubadak',
+            'terima' : 'jawek',
+            'panggil' : 'imbow',
+            'tua' : 'gaek',
+            'juga' : 'juo',
+            'haluan' : 'aluan',
+            'melihat' : 'maliek',
+            'lihat' : 'liek',
+            'hias' : 'kie',
+            'setiap' : 'satiok',
+            'terus' : 'tarus',
+            'putus' : 'putui',
+            'tambah' : 'tambu',
+            'angkat' : 'angkek',
+            'senja' : 'sanjo',
             'langsat' : 'langsek'
-            'singkat' : 'singkek'
-            'mulut' : 'muncung'
-            'uccok' : 'panggilan anak laki - laki'
-            'ini' : 'ikko'
-            'buah' : 'bua'
-            'dingin' : 'sajuk'
-            'tiga' : 'tigo'
-            'awan' : 'ambun'
-            'betis' : 'bati'
-            'hanyut' : 'hanyuk'
-            'geli' : 'gali'
-            'cerai' : 'care'
-            'menangis' : 'manangi'
-            'membeli' : 'mambali'
-            'melempar' : 'malanting'
-            'berlari' : 'balari'
-            'berenang' : 'baranang'
-            'berkelahi' : 'bacakkak'
-            'katakan' : 'katokan'
-            'pegang' : 'pacikk'
-            'pegangkan' 'pacikkan'
-            'jual' : 'jua'
-            'lempar' : 'bahe'
+            'singkat' : 'singkek',
+            'mulut' : 'muncung',
+            'ini' : 'ikko',
+            'buah' : 'bua',
+            'dingin' : 'sajuk',
+            'tiga' : 'tigo',
+            'awan' : 'ambun',
+            'betis' : 'bati',
+            'hanyut' : 'hanyuk',
+            'geli' : 'gali',
+            'cerai' : 'care',
+            'menangis' : 'manangi',
+            'membeli' : 'mambali',
+            'melempar' : 'malanting',
+            'berlari' : 'balari',
+            'berenang' : 'baranang',
+            'berkelahi' : 'bacakkak',
+            'katakan' : 'katokan',
+            'pegang' : 'pacikk',
+            'pegangkan' 'pacikkan',
+            'jual' : 'jua',
+            'lempar' : 'bahe',
         };
 
         // Reverse dictionary for translation from Bahasa Pesisir to Indonesian
