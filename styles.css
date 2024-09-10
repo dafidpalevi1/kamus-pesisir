@@ -217,9 +217,9 @@ button:hover {
 .footer {
     text-align: center;
     font-size: 14px;
-    color: #777;
+    color: #ffff;
     padding: 10px;
-    background-color: #fff;
+    background-color: #007bff;
     border-top: 1px solid #ddd;
     position: fixed;
     bottom: 0;
