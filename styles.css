@@ -213,6 +213,43 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Style untuk kolom partner */
+.partners-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.partners-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.partners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-item img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .partners-logos {
+        flex-direction: column;
+    }
+    
+    .logo-item {
+        margin-bottom: 20px;
+    }
+}
+
+
 /* Footer Styling */
 .footer {
     text-align: center;

@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const inputValue = inputText.value.toLowerCase().trim();
 
         const dictionary = {
-            
                 'apa': 'apo',
                 'siapa': 'siapo',
                 'saya': 'ambo',
@@ -248,9 +247,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'pegang': 'pacikk',
                 'pegangkan': 'pacikkan',
                 'jual': 'jua',
-                'lempar': 'bahe'
-            
-            
+                'lempar': 'bahe',
         };
 
         // Reverse dictionary for translation from Bahasa Pesisir to Indonesian
@@ -322,4 +319,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nav.classList.toggle('active');
         }
     }
+
+    
+
 });
