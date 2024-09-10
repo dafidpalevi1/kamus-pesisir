@@ -248,6 +248,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 'pegangkan': 'pacikkan',
                 'jual': 'jua',
                 'lempar': 'bahe',
+                'ibu-ibu' : 'umak-umak',
+                'bapak-bapak' : 'aya-aya',
+                'pulau' : 'pulo',
+                'pencuri' : 'pancilok',
+                'empat' :'ampek',
+                'pegang' : 'pacikkan',
+                'berjalan' : 'bajalan',
+                'menanti' : 'mananti',
+                'kekasih' : 'gandak',
+                'uang' : 'kepeng',
+                'mencuri' 'mancilok',
+                'gulai' : 'gule',
+                'menggulai' : 'manggule',
+                'dipukul': 'dihampok',
+                'dicuci': 'disasa',
+                'terbunuh': 'tabunu',
+                'terbawa': 'tabaok',
+                'diulurkan': 'diulukkan',
+                'pintar' : 'pande',
+                'melarat' : 'mularek'
+                'dua belas' : 'duo bale'
         };
 
         // Reverse dictionary for translation from Bahasa Pesisir to Indonesian

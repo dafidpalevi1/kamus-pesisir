@@ -67,14 +67,26 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <textarea placeholder="Write your message here..."></textarea>
-            <button type="submit">Send Message</button>
+            <textarea id="message" placeholder="Write your message here..."></textarea>
+            <button type="button" onclick="sendMessage()">Send Message</button>
         </section>
-    </div>
+        
+        <script>
+        function sendMessage() {
+            var message = document.getElementById('message').value;
+            var phoneNumber = '0895638066066'; // Pastikan nomor telepon sudah benar dan sesuai format
+            var encodedMessage = encodeURIComponent(message);
+            var url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            window.location.href = url; // Gunakan window.location.href untuk mengarahkan tab yang sama
+        }
+        </script>
+        
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 <a href="https://www.tiktok.com/@dafidseo">Dafid SEO</a>. All Rights Reserved.</p>
+
+  <footer class="footer">
+        <p>&copy; 2024 [<a href="https://www.tiktok.com/@dafidseo">Dafid SEO</a>]. All Rights Reserved.</p>
+
     </footer>
     <script src="script.js"></script>
 </body>

@@ -259,6 +259,7 @@ button:hover {
     padding: 10px;
     background-color: #007bff;
     border-top: 1px solid #ddd;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
